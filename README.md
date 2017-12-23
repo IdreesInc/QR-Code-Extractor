@@ -1,5 +1,8 @@
 # QR Code Extractor
 A Python based QR code extractor that uses OpenCV to detect and extract QR codes in any orientation.
+<img src='https://chart.googleapis.com/chart?cht=qr&chl=Hello%20mate!&chs=180x180&choe=UTF-8&chld=L|2'>
+<img src='https://chart.googleapis.com/chart?cht=qr&chl=Why%20are%20you&chs=180x180&choe=UTF-8&chld=L|2'>
+<img src='https://chart.googleapis.com/chart?cht=qr&chl=looking%20at%20this%3F&chs=180x180&choe=UTF-8&chld=L|2'>
 ## Features
   - Ability to rapidly detect multiple QR codes in an image or video frame at once
   - Ability to compensate for perspective and simplify codes
