@@ -35,5 +35,6 @@ A Python based QR code extractor that uses OpenCV to detect and extract QR codes
  ## Important Notes
  - This program *does not* decode QR codes by itself. Decoding must be handled by an outside program (such as ZBar)
  - This code could be much more optimized. Though iterating through squares is not too intensive (as very few contours end up matching the criteria), it could better handle finding the fourth corner and determining the QR code's bounds
+ - This code was made as a learning experience, and as such has some major limitations. It is unable to extract QR codes with different colours, distractions or embellishments, and QR codes with more than one alignment locator. It is not meant to be used in a production environment, and is more suited as a learning tool or first step towards making a real QR code reader.
  
  ### Hope you find this code helpful, and if you have any questions feel free to contact me!
