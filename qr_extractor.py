@@ -82,7 +82,7 @@ def extend(a, b, length, int_represent=False):
         return result
 
 
-def read(frame, debug=False):
+def extract(frame, debug=False):
     output = frame.copy()
 
     # Remove noise and unnecessary contours from frame
@@ -221,8 +221,7 @@ def read(frame, debug=False):
         warp = cv2.cvtColor(warp, cv2.COLOR_BGR2GRAY)
         small = cv2.resize(warp, (SMALL_DIM, SMALL_DIM), 0, 0, interpolation=cv2.INTER_CUBIC)
         _, small = cv2.threshold(small, 100, 255, cv2.THRESH_BINARY)
-        _, warp = cv2.threshold(warp, 100, 255, cv2.THRESH_BINARY)
-        codes.append(warp)
+        codes.append(small)
         if debug:
             cv2.imshow("Warped: " + str(i), small)
 
