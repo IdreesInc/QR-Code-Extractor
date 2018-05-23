@@ -1,16 +1,16 @@
-# QR Code Extractor
+# QR Code Extractor [WIP]
 A Python based QR code extractor that uses OpenCV to detect and extract QR codes in any orientation.
 <img src='https://chart.googleapis.com/chart?cht=qr&chl=Hello%20mate!&chs=180x180&choe=UTF-8&chld=L|2'>
 <img src='https://chart.googleapis.com/chart?cht=qr&chl=Why%20are%20you&chs=180x180&choe=UTF-8&chld=L|2'>
 <img src='https://chart.googleapis.com/chart?cht=qr&chl=looking%20at%20this%3F&chs=180x180&choe=UTF-8&chld=L|2'>
-## Features
+## Important Notes
+ - This program ***does not* decode QR codes by itself**. Decoding must be handled by an outside program (such as ZBar)
+  - This code was made as a learning experience, and as such has some major limitations. It is unable to extract QR codes with different colours, distractions or embellishments, and QR codes with more than one alignment locator. **I do not recommend using this code** as is, instead use the source and methodology as a reference for making your own QR extractor. It is not meant to be used in a production environment, and is more suited as a learning tool or first step towards making a real QR code reader.
+ - This code could be much more optimized. Though iterating through squares is not too intensive (as very few contours end up matching the criteria), it could better handle finding the fourth corner and determining the QR code's bounds
+## Current Features
   - Ability to rapidly detect multiple QR codes in an image or video frame at once
   - Ability to compensate for perspective and simplify codes
   - Compatible with Model 1, Model 2, and SQRC codes
-## Important Notes
- - This program *does not* decode QR codes by itself. Decoding must be handled by an outside program (such as ZBar)
- - This code could be much more optimized. Though iterating through squares is not too intensive (as very few contours end up matching the criteria), it could better handle finding the fourth corner and determining the QR code's bounds
- - This code was made as a learning experience, and as such has some major limitations. It is unable to extract QR codes with different colours, distractions or embellishments, and QR codes with more than one alignment locator. It is not meant to be used in a production environment, and is more suited as a learning tool or first step towards making a real QR code reader.
 ## Methodology - How it works
   ### Step One: Remove noise from sample image
   - Convert original image to greyscale
