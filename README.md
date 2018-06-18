@@ -1,4 +1,4 @@
-# QR Code Extractor [WIP]
+# QR Code Extractor [Proof of Concept]
 A Python based QR code extractor that uses OpenCV to detect and extract QR codes in any orientation.
 <img src='https://chart.googleapis.com/chart?cht=qr&chl=Hello%20mate!&chs=180x180&choe=UTF-8&chld=L|2'>
 <img src='https://chart.googleapis.com/chart?cht=qr&chl=Why%20are%20you&chs=180x180&choe=UTF-8&chld=L|2'>
